@@ -1,0 +1,44 @@
+body {
+    font-family: 'Bree Serif', serif;
+}
+#table {
+    background-color: rgb(175, 172, 172);
+    border: 2px solid red;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 70px;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.hand {
+    box-sizing: border-box;
+    height: 100px;
+    background-color: rgb(136, 135, 135);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.hand img {
+    height: 90px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#messages {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
