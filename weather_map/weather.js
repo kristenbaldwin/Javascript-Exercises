@@ -11,7 +11,7 @@ function weatherLookup(){
     // create and send an XHR request
     function makeRequest() {
         httpRequest = new XMLHttpRequest(); // instantiating JS object
-        httpRequest.onreadystatechange = responseMethod; // why is this not referring to the function?
+        httpRequest.onreadystatechange = responseMethod;
         httpRequest.open('GET', url + city + ',' + state + '&appid=' + apiKey); // create unique URL with API key
         httpRequest.send();
     }
@@ -19,8 +19,7 @@ function weatherLookup(){
     // handle XHR response
     function responseMethod() {
         if (httpRequest.readyState === 4) {
-            //console.log(httpRequest.responseText); // this is the response from the server with the JSON string
-console.log(httpRequest);
+            console.log(httpRequest.responseText); // this is the response from the server with the JSON string
             if (httpRequest.status === 200) {
                 updateUISuccess(httpRequest.responseText); // if successful response from server for data, run this function to parse JSON string
             } else {
